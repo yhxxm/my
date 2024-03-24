@@ -11,7 +11,7 @@ var rule={
     },
     class_parse: '.navbar&&ul&&li;a&&Text;a&&href;/(\\d+).html',
     class_exclude:'留言|首页|网盘|',
-    play_parse: true,
+    play_parse: false,
     lazy: '',
     limit: 6,
     推荐: 'body&&.scroll-box;.module-poster-item.module-item;.module-poster-item-title&&Text;img&&data-original;.module-item-note&&Text;a&&href',

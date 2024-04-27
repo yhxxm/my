@@ -1,7 +1,7 @@
     {"wallpaper":"",
     "spider": "./jar/0410.jar;md5;a937946892918eeee7a8d9b24d8f615a",
     "sites": [   
-   {"key": "drpy_js_cz",
+   {"key": "drpy_js_360",
     "name": "360|DRPY",
     "type": 3,
     "api": "http://gh.loven.eu.org/https://raw.githubusercontent.com/hjdhnx/hipy-server/master/app/t4/files/drpy_libs/drpy2.min.js",

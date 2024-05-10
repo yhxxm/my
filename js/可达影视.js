@@ -1,0 +1,36 @@
+var rule = {
+  title:'可达影视',
+  host:'https://kedays.org',
+  url:'/shaixuan/fyclass--------fypage---.html',
+  searchUrl:'/so/**----------fypage---.html',
+  searchable:2,
+  quickSearch:0,
+  filterable:1,
+  filter:'',
+  filter_url:'',
+  headers:{
+      'User-Agent':'MOBILE_UA',
+  },
+  timeout:5000,
+  class_parse:'.nav-m-box&&li;a&&Text;a&&href;/.*\/(.*?)\.html',
+  cate_exclude:'最近|排行',
+  play_parse:true,
+  lazy:$js.toString(()=>{
+    input = {parse:1,url:input,js:''};
+  }),
+  double:true,
+  推荐:'.layout-box;.vlist&&li;*;*;*;*',
+  一级:'.vod-list&&ul&&li;a&&title;.lazyload&&data-original;.item-status&&Text;a&&href',
+  二级:{
+    title:'h3&&Text;p.row&&span&&a&&Text',
+    img:'img.lazyload&&data-original',
+    desc:'p.row&&span:eq(-1)&&Text;p.row&&span:eq(2)&&Text;p.row&&span:eq(1)&&Text;p.row&&span:eq(4)&&Text;p.row&&span:eq(3)&&Text;',
+    content:'.more-box&&Text',
+    tabs:'.playlist-tab&&ul&&li',
+    lists:'.ewave-playlist-content:eq(#id)&&li',
+    tab_text:'body&&Text',
+    list_text:'body&&Text',
+    list_url:'a&&href'
+  },
+  搜索:'*',
+}

@@ -19,8 +19,8 @@ var rule = {
         'User-Agent':'PC_UA'
     },
     timeout:5000,
-    class_name:'影视筛选&电视剧&高分电影&热门下载&本月热门&最新电影&国产剧&美剧&日韩剧',//静态分类名称拼接
-    class_url:'movie_bt&dsj&gf&hot&hot-month&new-movie&zgjun&meiju&jpsrtv',//静态分类标识拼接
+    class_name:'电视剧&国产剧&美剧&日韩剧',//静态分类名称拼接
+    class_url:'dsj&gf&zgjun&meiju&jpsrtv',//静态分类标识拼接
     // class_parse: '.navlist li:gt(0):lt(7);a&&Text;a&&href;.*/(\\w+)',
     play_parse:true,
     lazy:'',

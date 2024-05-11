@@ -6,9 +6,9 @@ muban.mxone5.二级.tab_text = 'body--small&&Text';
 var rule={
 	title:'新视觉影视',
 	模板:'mxone5',
-	// host:'https://www.6080dy4.com',
-	host:'https://www.80kk.app',
-	hostJs:'print(HOST);let html=request(HOST,{headers:{"User-Agent":PC_UA}});let src=jsp.pdfh(html,".go:eq(0)&&a&&href");print(src);HOST=src',
+	 host:'https://www.80yy3.com',
+	//host:'https://www.80kk.app',
+	//hostJs:'print(HOST);let html=request(HOST,{headers:{"User-Agent":PC_UA}});let src=jsp.pdfh(html,".go:eq(0)&&a&&href");print(src);HOST=src',
 	// url:'/vodshow/fyclass--------fypage---.html',
 	url:'/vodshow/fyfilter.html',
     filterable:1,//是否启用分类筛选,

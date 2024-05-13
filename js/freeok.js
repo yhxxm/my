@@ -1,6 +1,6 @@
 var rule={
     title: 'freeok',
-    host: 'https://www.freeok.pro',
+    host: 'https://www.freeok.vip',
     url: '/vod-show/fyclass--------fypage---.html',
     searchUrl: '/so1so/**----------fypage---.html',
     searchable: 2,

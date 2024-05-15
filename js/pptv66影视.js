@@ -10,7 +10,7 @@ var rule={
     'User-Agent': 'MOBILE_UA',
     },
     class_parse: '.navbar&&ul&&li;a&&Text;a&&href;/(\\d+).html',
-    class_exclude:'日更新|首页|APP|',
+    //class_exclude:'日更新|首页|APP|',
     play_parse: true,
     lazy: '',
     limit: 6,

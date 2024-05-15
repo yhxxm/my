@@ -1,6 +1,6 @@
 var rule={
     title: 'pptv66影视',
-    host: 'https://pptv06.com',
+    host: 'https://www.pptv06.com',
     url: '/vodshow/fyclass--------fypage---.html',
     searchUrl: '/vodsearch/**----------fypage---.html',
     searchable: 2,

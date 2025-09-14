@@ -2,7 +2,7 @@
 # 参考：
 # fork来自mzky大佬仓库 https://github.com/mzky/checklist
 
-播放源：https://raw.githubusercontent.com/mzky/checklist/master/itvlist.m3u
+播放源：https://raw.githubusercontent.com/yhxxm/my/refs/heads/main/iptv/itvlist.m3u
 ```
 1、探测ts稳定性和响应时间（慢但准确，完成需要30多分钟，加线程数可以缩短时间，但易报错）
 2、在频道下的播放源以响应时间排序

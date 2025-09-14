@@ -1,0 +1,16 @@
+FROM python:slim
+WORKDIR /app
+COPY m3ucheck.py .
+RUN pip config set global.index-url https://pypi.mirrors.ustc.edu.cn/simple
+RUN pip install selenium requests futures aiohttp aiofiles asyncio numpy
+RUN apt-get update && apt-get install -y cron tzdata
+RUN ln -fs /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+RUN dpkg-reconfigure -f noninteractive tzdata
+RUN chmod +x /app/m3ucheck.py
+RUN echo "0 6 * * * root /usr/local/bin/python3 /app/m3ucheck.py >> /app/m3ucheck.log 2>&1" > /etc/cron.d/m3ucheck-task
+RUN echo "0 18 * * * root /usr/local/bin/python3 /app/m3ucheck.py >> /app/m3ucheck.log 2>&1" >> /etc/cron.d/m3ucheck-task
+RUN chmod 0644 /etc/cron.d/m3ucheck-task
+RUN touch /app/m3ucheck.log
+RUN touch /var/log/cron
+RUN chmod 644 /var/log/cron
+CMD ["cron", "-f"]

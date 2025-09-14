@@ -14,3 +14,6 @@ RUN touch /app/m3ucheck.log
 RUN touch /var/log/cron
 RUN chmod 644 /var/log/cron
 CMD ["cron", "-f"]
+
+# docker build -t itvall .
+# docker run -d --name itvall --restart=always -v /opt/1panel/挂载目录:/app -v /挂载目录:/root itvall
